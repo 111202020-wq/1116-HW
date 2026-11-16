@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>吳佩蓁 Zoe Wu｜履歷作品集</title>
+  <meta name="description" content="政大國貿系吳佩蓁（Zoe Wu）的個人履歷作品集：商業競賽、供應鏈實習與領導經歷。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+
+  <nav class="site-nav">
+    <div class="container">
+      <a class="brand" href="#hero">Zoe Wu</a>
+      <ul class="nav-links">
+        <li><a href="#about">關於我</a></li>
+        <li class="hide-sm"><a href="#skills">能力</a></li>
+        <li><a href="#experience">經歷</a></li>
+        <li><a href="#projects">作品</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 1. Hero -->
+    <header id="hero" class="hero">
+      <div class="container">
+        <span class="eyebrow">Portfolio · Résumé</span>
+        <h1 id="hero-name">吳佩蓁</h1>
+        <p id="hero-headline" class="headline"></p>
+        <p id="hero-subline" class="subline"></p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#projects">看我的作品</a>
+          <a class="btn" href="#experience">經歷時間軸</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. About -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">About</span>
+          <h2>關於我</h2>
+          <div id="about-text"></div>
+        </div>
+        <div id="stats" class="stats" aria-label="關鍵數字"></div>
+      </div>
+    </section>
+
+    <!-- 3. Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <span class="eyebrow">Skills</span>
+        <h2>能力</h2>
+        <div id="skills-grid" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- 4. Experience（資料：data/profile.js → experience） -->
+    <section id="experience" class="section">
+      <div class="container">
+        <span class="eyebrow">Experience</span>
+        <h2>經歷</h2>
+        <ol id="timeline" class="tl"></ol>
+      </div>
+    </section>
+
+    <!-- 5. Projects（資料：data/projects.js） -->
+    <section id="projects" class="section">
+      <div class="container">
+        <span class="eyebrow">Selected Work</span>
+        <h2>作品</h2>
+        <div id="filters" class="filter-row" role="group" aria-label="依類別篩選"></div>
+        <div id="project-grid" class="card-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 吳佩蓁 Zoe Wu · 最後更新 <time id="updated" datetime="2026-11-16">2026-11-16</time></p>
+      <ul id="footer-links" class="footer-links"></ul>
+    </div>
+  </footer>
+
+  <script src="data/profile.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
